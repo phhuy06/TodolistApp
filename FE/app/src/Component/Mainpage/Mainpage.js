@@ -90,9 +90,8 @@ export default function Mainpage() {
         const datasend = {
             account: decode.account,
             day: format(startDate,'yyyy-MM-dd'),
-            work: todo
+            work: todolist[todo].work
         }
-
         fetch("http://13.229.94.222:8000/delete_works",{
             method:"DELETE",
             body: JSON.stringify(datasend),
