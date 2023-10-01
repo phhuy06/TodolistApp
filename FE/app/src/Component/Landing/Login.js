@@ -32,7 +32,7 @@ export default function Login() {
             password: password
         }
 
-        fetch('http://127.0.0.1:8000/login', {
+        fetch('http://13.229.94.222:3000/login', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(form),
