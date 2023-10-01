@@ -93,6 +93,8 @@ def delete_work_by_id(user_id:str, day: date, work: str):
     with Session(engine) as session:
         statement = select(Todolist).where(Todolist.user_id == user_id).where(Todolist.list_day == day).where(Todolist.list_work == work)
         result = session.exec(statement).first()
+        if result is None:
+            return "not found"
         session.delete(result)
         session.commit()
         return "complete"

@@ -2,11 +2,11 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from Backend.API.routes import route
 
-origins = ["*"]
-
-
 app = FastAPI()
 
+
+
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
