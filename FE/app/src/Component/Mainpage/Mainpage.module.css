@@ -1,0 +1,144 @@
+.mainpage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.avatar{
+    position: absolute;
+    right: 35px;
+    top: 30px;
+    font-size: 30px;
+    color: rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+.avatarNavigation{
+    background-color: #7f7f7f;
+    width: 130px;
+    height: 100px;
+    position: absolute;
+    top:40px;
+    right: -5px;
+    display: none;
+}
+
+.avatarNavigation::before{
+    content: "";
+    display: block;
+    background-color: #7f7f7f;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    position: absolute;
+    top:0;
+    right: 8px;
+}
+
+
+.avatarNavigationshow{
+    display: flex;
+    flex-direction: column;
+}
+
+.navitem{
+    display: flex;
+    font-size: 15px;
+    color:white;
+    align-items: center;
+    z-index: 1;
+    height: 50%;
+    text-wrap: nowrap;
+}
+
+.navitem:first-child{
+    border-bottom: 1px solid #333;
+}
+
+.navitem:hover{
+    opacity: .7;
+
+}
+
+.icons{
+    margin: auto 10px auto 10px;
+}
+
+.logo{
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+}
+
+
+.body{
+    margin: auto;
+    width: 500px;
+    height: 700px;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+}
+.datepicker{
+    margin-left: 20px;
+    color:white;
+    font-size: 15px;
+}
+
+.calendar{
+    width: 100px;
+}
+
+.input{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+}
+
+.input input{
+    width: 200px;
+}
+
+.input input::placeholder{
+    font-size: 12px;
+}
+
+.todolist ul{
+    padding: 0;
+}
+
+.works{
+    list-style: none;
+    height: 30px;
+    width: 460px;
+    background-color: lightgreen;
+    margin: auto 0 auto 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 10px;
+    border-bottom: 1px solid #333;
+    position: relative;
+}
+
+
+.time{
+    position: absolute;
+    left: 70%
+}
+
+.errormsg{
+    color:rgb(255, 77, 0);
+    font-size: 12px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.deleteWork:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,33 @@
+:root{
+  --nothing: red;
+}
+
+*{
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  box-sizing: border-box;  
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root{
+  display: flex;
+  margin:auto;
+  height: 100%;
+  width: 100%;
+}
+
+
+

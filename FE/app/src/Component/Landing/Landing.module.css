@@ -1,0 +1,50 @@
+.landing{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.block{
+    width: 30%;
+    height: 50%;
+    background-color: rgba(0,0,0,0.3);
+    margin: auto;
+    display: flex;
+}
+
+.sidebar{
+    width: 20%;
+    height: 100%;
+    background-color: rgba(116, 112, 112, 0.3);
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #333;
+}
+
+
+.side{
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 255, 0.455);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+}
+
+.side:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.tologin{
+    border-bottom: 1px solid #333;
+}
+
+.logo{
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+}

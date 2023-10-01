@@ -1,0 +1,22 @@
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from Backend.API.routes import route
+
+origins = ["*"]
+
+
+app = FastAPI()
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+app.include_router(route)
+
+# app.include_router(router, tags=["users"])
+# app.include_router(auth, tags=["auth"])
