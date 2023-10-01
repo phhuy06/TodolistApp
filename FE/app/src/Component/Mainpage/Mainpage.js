@@ -54,7 +54,7 @@ export default function Mainpage() {
             day: format(startDate,'yyyy-MM-dd'),
             time: timedefault
         }
-        fetch("http://13.229.94.222:3000/create_work",{
+        fetch("http://13.229.94.222:8000/create_work",{
             method:"POST",
             body: JSON.stringify(datasend),
             headers: {
@@ -71,7 +71,7 @@ export default function Mainpage() {
     useEffect(()=>{
         const token = localStorage.getItem('token');
         const decode = jwt(token)
-        fetch(`http://13.229.94.222:3000/list_works?day=${format(startDate,'yyyy-MM-dd')}&account=${decode.account}`,{
+        fetch(`http://13.229.94.222:8000/list_works?day=${format(startDate,'yyyy-MM-dd')}&account=${decode.account}`,{
             method:"GET",
             headers: {
                 "content-type": "application/json",
@@ -93,7 +93,7 @@ export default function Mainpage() {
             work: todo
         }
 
-        fetch("http://13.229.94.222:3000/delete_works",{
+        fetch("http://13.229.94.222:8000/delete_works",{
             method:"DELETE",
             body: JSON.stringify(datasend),
             headers: {

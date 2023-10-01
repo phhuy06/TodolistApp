@@ -34,7 +34,7 @@ export default function Register({ onRegister }) {
             email: email,
             password: password
         }
-        fetch('http://13.229.94.222:3000/register', {
+        fetch('http://13.229.94.222:8000/register', {
             method: "POST",
             headers: {"content-type": "application/json"},
             body: JSON.stringify(form),
