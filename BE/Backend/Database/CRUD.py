@@ -89,7 +89,7 @@ def get_id_by_account(user_account: str):
         return result.user_id
     
 
-def delete_work_by_id(user_id:str, day: date, work: str):
+def delete_work_by_id(user_id:int, day: date, work: str):
     with Session(engine) as session:
         statement = select(Todolist).where(Todolist.user_id == user_id).where(Todolist.list_day == day).where(Todolist.list_work == work)
         result = session.exec(statement).first()
